@@ -38,7 +38,6 @@
                 fetchData() {
                     axios({ url: `https://www.reddit.com/r/${this.category}/top.json?limit=5`, method: 'GET' }).then(response => {
                         this.subredditsData = response.data.data.children;
-                        console.log(this.subredditsData)
                     });
                 }
             }
